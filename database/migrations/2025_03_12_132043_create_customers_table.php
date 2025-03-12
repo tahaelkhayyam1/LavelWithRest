@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('type');
-            $table->string('email')->unique();
+            $table->string('email', 191)->unique(); // Limit email to 191 characters
             $table->string('address');
             $table->string('phone');
             $table->string('city');

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('amount');
             $table->string('description');
             $table->string('status'); // paid, unpaid
-            $table->string('billed_dated');
-                        $table->string('paid_date')->nullable();    
+            $table->date('billed_dated');
+            $table->string('paid_date')->nullable();    
             $table->timestamps();
         });
     }
